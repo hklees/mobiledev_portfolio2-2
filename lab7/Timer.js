@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import {StyleSheet, View} from 'react-native';
 
 //new functional component #1
-<View style={styles.timestyle}>
-
-</View>
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
     const [isActive, setIsActive] =useState(true);
