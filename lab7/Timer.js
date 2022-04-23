@@ -6,7 +6,7 @@ const Timer = () => {
     const [seconds, setSeconds] = useState(0);
     const [isActive, setIsActive] =useState(true);
     
-    function onOffSwith (){
+    function onOffSwitch (){
         setIsActive(!isActive)
     }
     
@@ -32,8 +32,9 @@ const Timer = () => {
     </div>
 
     <div className="timeButtons">
-        <Button title= "Pause/Play Timer" className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
-        onClick = {onOffSwith}>
+        <Button title= "Pause/Play Timer" 
+        //className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
+        onClick = {onOffSwitch}>
         </Button>
     </div>
 </div>
