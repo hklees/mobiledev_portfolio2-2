@@ -10,13 +10,13 @@ export default function App() {
     { description: "Task 3", key: "3", completed: false },
   ])
   let addTask = useCallback(() => {
-    let keys = task.map(task => parseInt(task.key))
+    let keys = tasks.map(task => parseInt(task.key))
     console.log(maxKey)
     let maxKey = Math.max(...keys) + 1
     let newTask = { description: inputText, completed: false, key: maxKey.toString() }
     console.log(newTask)
     setTasks([...tasks, newTask])
-    setInputText("")
+    //setInputText("")
   }, [inputText])
   return (
     <View style={styles.container}>
