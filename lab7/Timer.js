@@ -25,8 +25,8 @@ const Timer = () => {
     
     return (
         <View style={styles.timestyle}>
-{/* <div className="timediv"> */}
-<Text style={styles.title}>testing {seconds} seconds</Text>
+<Text style={styles.text}>testing {seconds} seconds</Text>
+<div className="timediv">
 
     {/* <div className="time">
         {seconds} seconds
@@ -38,7 +38,7 @@ const Timer = () => {
         onPress = {onOffSwitch}>
         </Button>
     </div>
-{/* </div> */}
+</div>
 </View>
 );
 };
@@ -53,7 +53,7 @@ const styles = StyleSheet.create ({
     time: {
         fontSize: 25,
     },
-    title: {
+    text: {
         fontSize: 25,
     }
 })
