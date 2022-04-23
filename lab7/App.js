@@ -27,7 +27,6 @@ export default function App() {
       <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
-      <CountTasks></CountTasks>
         <Text style={styles.title}>TODO App</Text>
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
@@ -45,7 +44,8 @@ export default function App() {
               textDecorationStyle: 'solid'
             } : undefined}
           ></CheckBox>
-        } />
+        } />      
+        <CountTasks></CountTasks>
       </View>
     </View>
   
