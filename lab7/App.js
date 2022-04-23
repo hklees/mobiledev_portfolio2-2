@@ -22,8 +22,10 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.innerContainer}>
         <Text style={styles.title}>TODO App</Text>
+        <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
         <Button title="Add" onPress={addTask}></Button>
+        </View>
         <FlatList data={tasks} keyExtractor={(item) => item.key} renderItem={({ item: task }) =>
           <CheckBox onPress={() => {
             let curTask = tasks.find(t => t.key == task.key)
