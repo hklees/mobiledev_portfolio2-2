@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {StyleSheet, View} from 'react-native';
-
+import { Button } from 'react-native-elements';
 //new functional component #1
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
@@ -32,10 +32,10 @@ const Timer = () => {
     </div>
 
     <div className="timeButtons">
-        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
+        <Button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
         onClick = {onOffSwith}>
             Pause/Play Timer
-        </button>
+        </Button>
     </div>
 </div>
 </View>
@@ -45,6 +45,9 @@ const Timer = () => {
 const styles = StyleSheet.create ({
     timestyle: {
         backgroundColor: '#0000'
+    },
+    button: {
+
     }
 })
 
