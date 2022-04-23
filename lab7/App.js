@@ -22,7 +22,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
-      <Text style={styles.title}>Keep track of your time on tasks!</Text>
+      <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
         <Text style={styles.title}>TODO App</Text>
@@ -55,6 +55,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 25,
+    alignSelf: 'center',
+  },
+  title2:{
+    fontSize: 15,
     alignSelf: 'center',
   },
   innerContainer: {
