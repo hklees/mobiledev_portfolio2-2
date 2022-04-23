@@ -25,7 +25,7 @@ const Timer = () => {
     
     return (
         <View style={styles.timestyle}>
-<div className="timediv">
+{/* <div className="timediv"> */}
 <Text style={styles.title}>testing {seconds} seconds</Text>
 
     {/* <div className="time">
@@ -38,7 +38,7 @@ const Timer = () => {
         onPress = {onOffSwitch}>
         </Button>
     </div>
-</div>
+{/* </div> */}
 </View>
 );
 };
