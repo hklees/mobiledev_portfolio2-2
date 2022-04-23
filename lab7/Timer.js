@@ -9,6 +9,10 @@ const Timer = () => {
     function onOffSwitch (){
         setIsActive(!isActive)
     }
+    function reset () {
+        setSeconds(0);
+        setIsActive(false);
+    }
     
     //if statement needs to go here
     useEffect(() => {
