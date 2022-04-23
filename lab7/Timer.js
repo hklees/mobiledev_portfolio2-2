@@ -28,9 +28,9 @@ const Timer = () => {
 <div className="timediv">
 <Text style={styles.title}>testing {seconds} seconds</Text>
 
-    <div className="time">
+    {/* <div className="time">
         {seconds} seconds
-    </div>
+    </div> */}
 
     <div className="timeButtons">
         <Button title= "Pause/Play Timer" 
@@ -51,6 +51,9 @@ const styles = StyleSheet.create ({
 
     },
     time: {
+        fontSize: 25,
+    },
+    title: {
         fontSize: 25,
     }
 })
