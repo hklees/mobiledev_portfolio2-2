@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Button, CheckBox, Input } from 'react-native-elements';
 import Timer from './Timer';
-import CountTasks from './CountTasks';
 
 export default function App() {
   let [inputText, setInputText] = useState("")
@@ -45,7 +44,6 @@ export default function App() {
             } : undefined}
           ></CheckBox>
         } />      
-        <CountTasks></CountTasks>
       </View>
     </View>
   
