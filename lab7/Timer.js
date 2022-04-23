@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 //new functional component #1
 const Timer = () => {
@@ -15,6 +15,8 @@ const Timer = () => {
     }
 
     //if statement needs to go here
+    useEffect(() => {
+        let interval = null;
     if (isActive) {
         interval =setInterval(() => {
             setSeconds(seconds => seconds +1);
@@ -22,10 +24,13 @@ const Timer = () => {
     } else if (isActive & seconds !==0) {
         clearInterval(interval);
     }
-    return () => Interval(interval);
-}, [something, something]);
+    return () => clearInterval(interval);
+}, [isActive, seconds]);
 
 return (
-    
-)
+    <button onClick = {onOffSwith}>
+        Reset
+    </button>
+);
+};
 export default Timer;
