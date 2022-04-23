@@ -22,6 +22,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
+      <Timer></Timer>
         <Text style={styles.title}>TODO App</Text>
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
@@ -40,7 +41,6 @@ export default function App() {
             } : undefined}
           ></CheckBox>
         } />
-        <Timer></Timer>
       </View>
     </View>
   );
