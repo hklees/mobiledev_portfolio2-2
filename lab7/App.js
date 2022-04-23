@@ -22,7 +22,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
+      <p>Keep track of your time on tasks!</p>
       <Timer></Timer>
+      <br></br>
         <Text style={styles.title}>TODO App</Text>
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>

@@ -49,6 +49,9 @@ const styles = StyleSheet.create ({
     button: {
 
     },
+    time: {
+        fontSize: 25,
+    }
 })
 
 export default Timer; StyleSheet;
