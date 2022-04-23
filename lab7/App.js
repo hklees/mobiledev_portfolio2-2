@@ -48,9 +48,6 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     flexDirection: 'row',
-    lineHeight: 40,
-    paddingBottom: 50,
-    marginBottom: 50
   },
   title: {
     fontSize: 25,
