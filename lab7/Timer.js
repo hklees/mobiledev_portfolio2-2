@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {StyleSheet} from 'react-native';
 
 //new functional component #1
 const Timer = () => {
@@ -23,6 +24,7 @@ const Timer = () => {
 }, [isActive, seconds]);
 
 return (
+<View style={styles.timestyle}>
 <div className="timediv">
 
     <div className="time">
@@ -36,6 +38,12 @@ return (
         </button>
     </div>
 </div>
+</View>
 );
 };
-export default Timer;
+
+const styles = StyleSheet.create ({
+
+})
+
+export default Timer; StyleSheet;
