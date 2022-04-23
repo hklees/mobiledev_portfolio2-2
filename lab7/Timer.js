@@ -33,8 +33,8 @@ const Timer = () => {
 
     <div className="timeButtons">
         <Button title= "Pause/Play Timer" 
-        //className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
-        onClick = {onOffSwitch}>
+        className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
+        onClick = {reset}>
         </Button>
     </div>
 </div>
