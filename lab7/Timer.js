@@ -28,9 +28,19 @@ const Timer = () => {
 }, [isActive, seconds]);
 
 return (
-    <button onClick = {onOffSwith}>
-        Reset
-    </button>
+<div className="timer">
+
+    <div className="time">
+        {seconds}s
+    </div>
+    
+    <div className="timeButtons">
+        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
+        onClick = {onOffSwith}>
+            Reset
+        </button>
+    </div>
+</div>
 );
 };
 export default Timer;
