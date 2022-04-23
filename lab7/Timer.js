@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {StyleSheet, View} from 'react-native';
-import { Button } from 'react-native-elements';
+import { Text, Button } from 'react-native-elements';
 //new functional component #1
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
@@ -25,9 +25,9 @@ const Timer = () => {
     
     return (
         <View style={styles.timestyle}>
-<Text style={styles.text}>testing {seconds} seconds</Text>
 <div className="timediv">
-
+    
+    <Text style={styles.text}>{seconds} seconds</Text>
     {/* <div className="time">
         {seconds} seconds
     </div> */}
@@ -55,6 +55,7 @@ const styles = StyleSheet.create ({
     },
     text: {
         fontSize: 25,
+        padding: 20,
     }
 })
 
