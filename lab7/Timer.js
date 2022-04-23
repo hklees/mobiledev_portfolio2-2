@@ -15,6 +15,11 @@ const Timer = () => {
     }
 
     //if statement needs to go here
+    if (isActive) {
+        interval =setInterval() => {
+            setSeconds(seconds => seconds +1);
+        }, 1000); //1000= = 1 second
+    } esle if (isActive & seconds !==0)
 }
 
 export default Timer;
