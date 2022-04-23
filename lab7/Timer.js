@@ -16,10 +16,16 @@ const Timer = () => {
 
     //if statement needs to go here
     if (isActive) {
-        interval =setInterval() => {
+        interval =setInterval(() => {
             setSeconds(seconds => seconds +1);
         }, 1000); //1000= = 1 second
-    } esle if (isActive & seconds !==0)
-}
+    } else if (isActive & seconds !==0) {
+        clearInterval(interval);
+    }
+    return () => Interval(interval);
+}, [something, something]);
 
+return (
+    
+)
 export default Timer;
