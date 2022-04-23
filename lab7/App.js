@@ -22,7 +22,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
-      <p>Keep track of your time on tasks!</p>
+      <Text style={styles.title}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
         <Text style={styles.title}>TODO App</Text>
