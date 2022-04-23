@@ -66,4 +66,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  p: {
+    fontSize: 25,
+  }
 });
