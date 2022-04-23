@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 //new functional component #1
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
-    const [isActive, setIsActive] =useState();
+    const [isActive, setIsActive] =useState(true);
 
     function onOffSwith (){
         setIsActive(!isActive)
@@ -28,12 +28,12 @@ const Timer = () => {
 }, [isActive, seconds]);
 
 return (
-<div className="timer">
+<div className="timediv">
 
     <div className="time">
         {seconds}s
     </div>
-    
+
     <div className="timeButtons">
         <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
         onClick = {onOffSwith}>
