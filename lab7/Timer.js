@@ -9,10 +9,6 @@ const Timer = () => {
     function onOffSwitch (){
         setIsActive(!isActive)
     }
-    function reset () {
-        setSeconds(0);
-        setIsActive(false);
-    }
     
     //if statement needs to go here
     useEffect(() => {
@@ -38,7 +34,7 @@ const Timer = () => {
     <div className="timeButtons">
         <Button title= "Pause/Play Timer" 
         className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
-        onClick = {reset}>
+        onPress = {onOffSwitch}>
         </Button>
     </div>
 </div>
