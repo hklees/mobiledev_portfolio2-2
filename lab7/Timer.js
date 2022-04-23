@@ -56,6 +56,8 @@ const styles = StyleSheet.create ({
     text: {
         fontSize: 25,
         padding: 20,
+        alignSelf: 'center',
+
     }
 })
 
