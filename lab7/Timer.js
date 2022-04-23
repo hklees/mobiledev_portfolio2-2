@@ -28,7 +28,7 @@ const Timer = () => {
 <div className="timediv">
 
     <div className="time">
-        {seconds}s
+        {seconds} seconds
     </div>
 
     <div className="timeButtons">
