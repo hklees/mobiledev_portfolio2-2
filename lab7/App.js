@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Button, CheckBox, Input } from 'react-native-elements';
 import Timer from './Timer';
+import CountTasks from './CountTasks';
+
 export default function App() {
   let [inputText, setInputText] = useState("")
   let [tasks, setTasks] = useState([
@@ -25,10 +27,11 @@ export default function App() {
       <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
+      <CountTasks></CountTasks>
         <Text style={styles.title}>TODO App</Text>
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
-        <Button title="Add" onPress={addTask}></Button>
+        <Button title="Add" onPress={addTask && CountTasks}></Button>
         </View>
         <FlatList data={tasks} keyExtractor={(item) => item.key} renderItem={({ item: task }) =>
           <CheckBox onPress={() => {
@@ -45,6 +48,7 @@ export default function App() {
         } />
       </View>
     </View>
+  
   );
 }
 
