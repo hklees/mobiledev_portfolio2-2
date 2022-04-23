@@ -43,7 +43,9 @@ return (
 };
 
 const styles = StyleSheet.create ({
-
+    timestyle: {
+        backgroundColor: '#0000'
+    }
 })
 
 export default Timer; StyleSheet;
