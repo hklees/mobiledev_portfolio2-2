@@ -48,7 +48,7 @@ const styles = StyleSheet.create ({
     },
     button: {
 
-    }
+    },
 })
 
 export default Timer; StyleSheet;
