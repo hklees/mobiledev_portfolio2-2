@@ -11,7 +11,7 @@ export default function App() {
   ])
   let addTask = useCallback(() => {
     let keys = task.map(task => parseInt(task.key))
-    console.log(keys)
+    console.log(maxKey)
     let maxKey = Math.max(...keys) + 1
     let newTask = { description: inputText, completed: false, key: maxKey.toString() }
     console.log(newTask)
