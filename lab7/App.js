@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useCallback, useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Button, CheckBox, Input } from 'react-native-elements';
+import Timer from './Timer';
 export default function App() {
   let [inputText, setInputText] = useState("")
   let [tasks, setTasks] = useState([
@@ -39,6 +40,7 @@ export default function App() {
             } : undefined}
           ></CheckBox>
         } />
+        <Timer></Timer>
       </View>
     </View>
   );
