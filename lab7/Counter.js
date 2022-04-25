@@ -10,6 +10,7 @@ const Counter = () => {
         <button onClick={() => setCount(prevCount => prevCount +1)}>Add (+)</button>
         {/* Subtract button */}
         <button onClick={() => setCount(prevCount => prevCount -1)}>Subtract (-)</button>
+        
         </>
     );
 }
