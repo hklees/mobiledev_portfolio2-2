@@ -5,7 +5,7 @@ const Notes = props => props.data.map(note => <div>{note.text}</div>);
 
 export default () => {
     //const stuff here
-    const initialData = [{text: 'Enter extra notes here'}];
+    const initialData = [{text: 'Notes will be added to this section'}];
     const [data, setData] = useState(initialData);
     const handleClick = () => {
         const text = document.querySelector('#noteinput').value.trim();
