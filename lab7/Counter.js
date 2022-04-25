@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { Button, Text, StyleSheet } from 'react-native-elements';
+import React, { useState, StyleSheet } from 'react';
+import { Button, Text } from 'react-native-elements';
 
 //new componet #3
 const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
-        <Text ></Text>
-        <p>Keep track of how many tasks you've compeleted</p>
-        <p> # of Tasks Completed: {count}</p>
+        <Text style= {styles.text}>Keep track of how many tasks you've compeleted </Text>
+        {/* <p>Keep track of how many tasks you've compeleted</p> */}
+        <Text style= {styles.text}># of Tasks Completed: {count} </Text>
+        {/* <p> # of Tasks Completed: {count}</p> */}
         {/* Add button */}
         {/* <button onClick={() => setCount(prevCount => prevCount +1)}>Add (+)</button> */}
         <Button title= "Add (+)" onPress= {() => setCount(prevCount => prevCount +1)}></Button>
@@ -27,7 +28,7 @@ const styles = StyleSheet.create ({
         padding: 20,
         alignSelf: 'center',
     }, 
-})
+});
 
 
-export default Counter; StyleSheet;
+export default Counter; StyleSheet
