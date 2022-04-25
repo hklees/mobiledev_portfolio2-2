@@ -24,11 +24,7 @@ function Notes() {
             {/* reset button */}
             <br></br>
             {/* <button onClick={resetInputField}>Reset Notes</button> */}
-            <Button style={{
-                backgroundColor: 'red',
-                borderWidth: 2,
-                borderColor: 'white',
-            }} 
+            <Button style={styles.button}
             title="Reset Notes" onPress={resetInputField} > </Button>
         </div>
     );
