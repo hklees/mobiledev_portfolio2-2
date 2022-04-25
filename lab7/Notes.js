@@ -11,6 +11,11 @@ export default () => {
         const text = document.querySelector('#noteinput').value.trim();
         if (text) {
             //const here
+            const nextState = produce (data, draftState => {
+                draftState.push({text});
+            });
+            //setData
+            setData(nextState);
         };
         document.querySelector('#noteinput').value = '';
         setData(nextState);
