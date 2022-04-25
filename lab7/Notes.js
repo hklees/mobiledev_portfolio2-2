@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 //new component #2
 
 function Notes() {
+    const [input, setInput] = useState("");
     return(
         <div>
             <textarea id="body" placeholder="Write in here"/>
