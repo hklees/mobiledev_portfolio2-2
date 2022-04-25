@@ -8,7 +8,7 @@ const CounterSetState = () => {
         {/* Add button */}
         <button onClick={() => setCount(prevCount => prevCount +1)}>Add (+)</button>
         {/* Subtract button */}
-        <button onClick={() => setCount(0)}>Reset</button>
+        <button onClick={() => setCount(prevCount => prevCount -1)}>Subtract (-)</button>
         </>
-    )
+    );
 }
