@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-const CounterSetState = () => {
+//new componet #3
+const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
