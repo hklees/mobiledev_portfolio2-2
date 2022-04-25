@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   title2:{
-    fontSize: 15,
+    fontSize: 20,
     alignSelf: 'center',
   },
   innerContainer: {
