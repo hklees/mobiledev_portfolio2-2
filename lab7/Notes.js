@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import {TextInput, Button } from 'react-native';
-import {StyleSheet, View} from 'react-native';
+import {TextInput, StyleSheet } from 'react-native';
+import { Button} from 'react-native-elements';
+
 
 //new component #2
 
