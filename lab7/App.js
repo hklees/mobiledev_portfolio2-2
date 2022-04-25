@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Button, CheckBox, Input } from 'react-native-elements';
 import Timer from './Timer';
+import Notes from './Notes';
 
 export default function App() {
   let [inputText, setInputText] = useState("")
@@ -24,6 +25,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.innerContainer}>
       <Text style={styles.title2}>Keep track of your time on tasks!</Text>
+      <Notes></Notes>
       <Timer></Timer>
       <br></br>
         <Text style={styles.title}>TODO App</Text>
