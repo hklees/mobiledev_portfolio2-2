@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, Button } from 'react-native';
-import { withTheme } from 'react-native-elements';
+import {TextInput, Button } from 'react-native';
+import {StyleSheet, View} from 'react-native';
+
 //new component #2
 
 function Notes() {

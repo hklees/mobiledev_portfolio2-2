@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {StyleSheet, View} from 'react-native';
 import { Text, Button } from 'react-native-elements';
+
 //new functional component #1
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
