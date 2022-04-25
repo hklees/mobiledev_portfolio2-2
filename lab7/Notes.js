@@ -12,10 +12,12 @@ function Notes() {
 
     return(
         <div>
-            {/* input field  */}
-            <input type= "text" value={input} onChange={handleUserInput} />
-            {/* <textarea id="body" placeholder="Write in here"/> */}
+            {/* <input type= "text" value={input} onChange={handleUserInput} /> */}
+            {/* text area box */}
+            <textarea id="body" value={input} onChange={handleUserInput} 
+            placeholder="Write your notes in here. Expand this notes section if neccessary."/>
             {/* reset button */}
+            <br></br>
             <button onClick={resetInputField}>Reset Notes</button>
         </div>
     );
