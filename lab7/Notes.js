@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { StyleSheet } from 'react-native';
 //new component #2
 
 function Notes() {
@@ -23,7 +24,13 @@ function Notes() {
     );
 }
 
-export default Notes;
+const styles = StyleSheet.create ({
+    body: {
+        backgroundColor: '#0000'
+    }
+})
+
+export default Notes; StyleSheet;
 
 
 // //user can input notes in box?
