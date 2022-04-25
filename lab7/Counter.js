@@ -6,7 +6,7 @@ const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
-        <Text
+        <Text ></Text>
         <p>Keep track of how many tasks you've compeleted</p>
         <p> # of Tasks Completed: {count}</p>
         {/* Add button */}
@@ -22,9 +22,11 @@ const Counter = () => {
 }
 
 const styles = StyleSheet.create ({
-    timestyle: {
-        backgroundColor: '#0000'
-    },
+    text: {
+        fontSize: 25,
+        padding: 20,
+        alignSelf: 'center',
+    }, 
 })
 
 
