@@ -24,8 +24,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
-      <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Notes></Notes>
+      <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
         <Text style={styles.title}>TODO App</Text>
