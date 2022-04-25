@@ -24,7 +24,7 @@ export default () => {
 
     return (
         <>
-        <input id='notesinput' type="text" placeholder="Enter notes here" />
+        <input id='notesinput' type="text" placeholder="Enter your extra notes here" />
         {/* button to sumbit note input */}
         <button onClick={() => handleClick()}>Add note</button>
         <Notes data={data} />
