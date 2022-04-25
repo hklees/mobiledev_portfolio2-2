@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import produce from 'immer';
 //user can input notes in box?
 const Notes = props => props.data.map(note => <div>{note.text}</div>);
 
