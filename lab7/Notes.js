@@ -25,7 +25,11 @@ function Notes() {
             {/* reset button */}
             <br></br>
             {/* <button onClick={resetInputField}>Reset Notes</button> */}
-            <Button style={styles.button}
+            <Button buttonStyle={{
+                backgroundColor: 'red',
+                borderWidth: 2,
+                borderColor: 'white', 
+            }}
             title="Reset Notes" onPress={resetInputField} > </Button>
         </div>
     );
@@ -37,12 +41,6 @@ const styles = StyleSheet.create ({
         padding: 30,
         alignSelf: 'center', 
         },
-    button: {
-        backgroundColor: 'red',
-        borderWidth: 2,
-        borderColor: 'white', 
-    },
-
 })
 
 export default Notes; StyleSheet;
