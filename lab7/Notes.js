@@ -15,10 +15,10 @@ function Notes() {
         <div>
             {/* <input type= "text" value={input} onChange={handleUserInput} /> */}
             {/* text area box */}
-            <textarea id="body" value={input} onChange={handleUserInput} 
-            placeholder="Write your notes in here. Expand this notes section if neccessary."/>
-            <TextInput style={styles.text} id="body" value={input} onChange={handleUserInput} 
-            placeholder="Write your notes in here. Expand this notes section if neccessary."/>
+            {/* <textarea id="body" value={input} onChange={handleUserInput} 
+            placeholder="Write your notes in here. Expand this notes section if neccessary."/> */}
+            <TextInput style={styles.text} multiline={true} value={input} onChange={handleUserInput} 
+            placeholder="Write your notes in here. Area will automatically expand."/>
             {/* reset button */}
             <br></br>
             <button onClick={resetInputField}>Reset Notes</button>
@@ -28,9 +28,10 @@ function Notes() {
 
 const styles = StyleSheet.create ({
     text: {
-        fontSize: 25,
+        fontSize: 15,
         padding: 20,
-        alignSelf: 'center',    },
+        alignSelf: 'center', 
+        },
 })
 
 export default Notes; StyleSheet;
