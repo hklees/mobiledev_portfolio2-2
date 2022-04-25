@@ -3,9 +3,20 @@ import React, { useState } from 'react';
 
 function Notes() {
     const [input, setInput] = useState("");
+    const handleUserInput = (e) => {
+        setInput(e.target.value);
+    };
+    const resetInputField = () => {
+        setInput("");
+    };
+
     return(
         <div>
-            <textarea id="body" placeholder="Write in here"/>
+            {/* input field  */}
+            <input type= "text" value={input} onChange={handleUserInput} />
+            {/* <textarea id="body" placeholder="Write in here"/> */}
+            {/* reset button */}
+            <button onClick={resetInputField}>Reset Notes</button>
         </div>
     );
 }
