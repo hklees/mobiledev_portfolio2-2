@@ -31,6 +31,7 @@ function Notes() {
                 width: 150,
                 alignItems: 'center',
                 justifyContent: 'center',
+                alignSelf: 'center',
             }}
             title="Reset Notes" onPress={resetInputField} > </Button>
         </div>
@@ -40,8 +41,10 @@ function Notes() {
 const styles = StyleSheet.create ({
     text: {
         fontSize: 15,
-        padding: 30,
+        padding: 40,
         alignSelf: 'center', 
+        alignSelf: 'center',
+
         },
 })
 

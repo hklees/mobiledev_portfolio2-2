@@ -19,6 +19,7 @@ const Counter = () => {
                 width: 150,
                 alignItems: 'center',
                 justifyContent: 'center',
+                alignSelf: 'center',
                 margin: 5,
             }}
             title= "Add (+)" onPress= {() => setCount(prevCount => prevCount +1)}></Button>
@@ -30,6 +31,7 @@ const Counter = () => {
                 width: 150,
                 alignItems: 'center',
                 justifyContent: 'center',
+                alignSelf: 'center',
                 margin: 5,
             }}
             title= "Subtract (-)" onPress= {() => setCount(prevCount => prevCount -1)}></Button>

@@ -39,6 +39,7 @@ const Timer = () => {
                 width: 200,
                 alignItems: 'center',
                 justifyContent: 'center',
+                alignSelf: 'center',
             }}
         title= "Pause/Play Timer" 
         className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
@@ -51,12 +52,6 @@ const Timer = () => {
 };
 
 const styles = StyleSheet.create ({
-    timestyle: {
-        backgroundColor: '#0000'
-    },
-    button: {
-
-    },
     time: {
         fontSize: 25,
     },
