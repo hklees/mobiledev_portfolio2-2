@@ -18,9 +18,10 @@ export default () => {
             document.querySelector('#notesinput').value = '';
             setData(nextState);
         };
-        document.querySelector('#noteinput').value = '';
+        document.querySelector('#notesinput').value = '';
         setData(nextState);
-    }
+    };
+
 
 
     return (
