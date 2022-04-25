@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, Button } from 'react-native';
+import { withTheme } from 'react-native-elements';
 //new component #2
 
 function Notes() {
@@ -22,7 +23,7 @@ function Notes() {
             {/* reset button */}
             <br></br>
             {/* <button onClick={resetInputField}>Reset Notes</button> */}
-            <Button title="Reset Notes" onPress={resetInputField} > </Button>
+            <Button style={styles.button} title="Reset Notes" onPress={resetInputField} > </Button>
         </div>
     );
 }
@@ -33,6 +34,12 @@ const styles = StyleSheet.create ({
         padding: 20,
         alignSelf: 'center', 
         },
+    button: {
+        backgroundColor: 'red',
+        borderWidth: 2,
+        borderColor: 'white', 
+    },
+
 })
 
 export default Notes; StyleSheet;
