@@ -17,7 +17,7 @@ function Notes() {
             {/* text area box */}
             <textarea id="body" value={input} onChange={handleUserInput} 
             placeholder="Write your notes in here. Expand this notes section if neccessary."/>
-            <TextInput id="body" value={input} onChange={handleUserInput} 
+            <TextInput style={styles.text} id="body" value={input} onChange={handleUserInput} 
             placeholder="Write your notes in here. Expand this notes section if neccessary."/>
             {/* reset button */}
             <br></br>
@@ -27,9 +27,10 @@ function Notes() {
 }
 
 const styles = StyleSheet.create ({
-    body: {
-        backgroundColor: '#0000'
-    },
+    text: {
+        fontSize: 25,
+        padding: 20,
+        alignSelf: 'center',    },
 })
 
 export default Notes; StyleSheet;
