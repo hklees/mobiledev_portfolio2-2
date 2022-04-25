@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Button } from 'react-native-elements';
+import { Button, Text, StyleSheet } from 'react-native-elements';
 
 //new componet #3
 const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
+        <Text
         <p>Keep track of how many tasks you've compeleted</p>
         <p> # of Tasks Completed: {count}</p>
         {/* Add button */}
@@ -20,4 +21,11 @@ const Counter = () => {
     );
 }
 
-export default Counter;
+const styles = StyleSheet.create ({
+    timestyle: {
+        backgroundColor: '#0000'
+    },
+})
+
+
+export default Counter; StyleSheet;
