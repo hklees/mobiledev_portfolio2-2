@@ -27,6 +27,7 @@ export default function App() {
       <View style={styles.innerContainer}>
       <Notes></Notes>
       <br></br>
+      <br></br>
       <Text style={styles.title2}>Keep track of your time on tasks!</Text>
       <Timer></Timer>
       <br></br>
@@ -48,6 +49,7 @@ export default function App() {
             } : undefined}
           ></CheckBox>
         } />  
+        <br></br>
         <Counter></Counter>
     
       </View>
