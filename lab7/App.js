@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Button, CheckBox, Input } from 'react-native-elements';
 import Timer from './Timer';
 import Notes from './Notes';
+import Counter from './Counter';
 
 export default function App() {
   let [inputText, setInputText] = useState("")
@@ -33,6 +34,8 @@ export default function App() {
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
         <Button title="Add" onPress={addTask}></Button>
+        <Counter></Counter>
+
         </View>
         <FlatList data={tasks} keyExtractor={(item) => item.key} renderItem={({ item: task }) =>
           <CheckBox onPress={() => {
