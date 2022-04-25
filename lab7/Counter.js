@@ -14,7 +14,7 @@ const Counter = () => {
         {/* Add button */}
         {/* <button onClick={() => setCount(prevCount => prevCount +1)}>Add (+)</button> */}
         <Button buttonStyle={{
-                backgroundColor: 'red',
+                backgroundColor: '#006400',
                 height: 40,
                 width: 150,
                 alignItems: 'center',
@@ -25,7 +25,7 @@ const Counter = () => {
         {/* Subtract button */}
         {/* <button onClick={() => setCount(prevCount => prevCount -1)}>Subtract (-)</button> */}
         <Button buttonStyle={{
-                backgroundColor: 'red',
+                backgroundColor: '#cd5c5c',
                 height: 40,
                 width: 150,
                 alignItems: 'center',
