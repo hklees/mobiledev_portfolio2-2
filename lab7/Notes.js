@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextInput } from 'react-native';
 //new component #2
 
 function Notes() {
@@ -16,6 +16,8 @@ function Notes() {
             {/* <input type= "text" value={input} onChange={handleUserInput} /> */}
             {/* text area box */}
             <textarea id="body" value={input} onChange={handleUserInput} 
+            placeholder="Write your notes in here. Expand this notes section if neccessary."/>
+            <TextInput id="body" value={input} onChange={handleUserInput} 
             placeholder="Write your notes in here. Expand this notes section if neccessary."/>
             {/* reset button */}
             <br></br>
