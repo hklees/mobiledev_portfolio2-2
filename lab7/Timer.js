@@ -34,7 +34,13 @@ const Timer = () => {
     </div> */}
 
     <div className="timeButtons">
-        <Button title= "Pause/Play Timer" 
+        <Button buttonStyle={{
+                height: 40,
+                width: 200,
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
+        title= "Pause/Play Timer" 
         className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}
         onPress = {onOffSwitch}>
         </Button>
