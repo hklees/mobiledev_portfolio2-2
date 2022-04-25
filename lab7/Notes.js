@@ -36,7 +36,7 @@ function Notes() {
 const styles = StyleSheet.create ({
     text: {
         fontSize: 15,
-        padding: 20,
+        padding: 30,
         alignSelf: 'center', 
         },
     button: {
