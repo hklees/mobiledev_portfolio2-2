@@ -34,8 +34,6 @@ export default function App() {
         <View styles={[{ height: 30, paddingBottom: 20 }, styles.input]}>
         <Input value={inputText} onChangeText={setInputText} style={{ height: 30, paddingBottom: 10 }}></Input>
         <Button title="Add" onPress={addTask}></Button>
-        <Counter></Counter>
-
         </View>
         <FlatList data={tasks} keyExtractor={(item) => item.key} renderItem={({ item: task }) =>
           <CheckBox onPress={() => {
@@ -49,7 +47,9 @@ export default function App() {
               textDecorationStyle: 'solid'
             } : undefined}
           ></CheckBox>
-        } />      
+        } />  
+        <Counter></Counter>
+    
       </View>
     </View>
   
