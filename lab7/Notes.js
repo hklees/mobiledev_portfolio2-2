@@ -15,6 +15,7 @@ export default () => {
                 draftState.push({text});
             });
             //setData
+            document.querySelector('#notesinput').value = '';
             setData(nextState);
         };
         document.querySelector('#noteinput').value = '';
