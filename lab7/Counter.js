@@ -1,5 +1,6 @@
-import React, { useState, StyleSheet } from 'react';
+import React, { useState } from 'react';
 import { Button, Text } from 'react-native-elements';
+import {StyleSheet} from 'react-native';
 
 //new componet #3
 const Counter = () => {
