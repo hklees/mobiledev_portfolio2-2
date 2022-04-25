@@ -13,11 +13,26 @@ const Counter = () => {
         {/* <p> # of Tasks Completed: {count}</p> */}
         {/* Add button */}
         {/* <button onClick={() => setCount(prevCount => prevCount +1)}>Add (+)</button> */}
-        <Button title= "Add (+)" onPress= {() => setCount(prevCount => prevCount +1)}></Button>
-        <br></br>
+        <Button buttonStyle={{
+                backgroundColor: 'red',
+                height: 40,
+                width: 150,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 5,
+            }}
+            title= "Add (+)" onPress= {() => setCount(prevCount => prevCount +1)}></Button>
         {/* Subtract button */}
         {/* <button onClick={() => setCount(prevCount => prevCount -1)}>Subtract (-)</button> */}
-        <Button title= "Subtract (-)" onPress= {() => setCount(prevCount => prevCount -1)}></Button>
+        <Button buttonStyle={{
+                backgroundColor: 'red',
+                height: 40,
+                width: 150,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 5,
+            }}
+            title= "Subtract (-)" onPress= {() => setCount(prevCount => prevCount -1)}></Button>
 
         </>
     );
