@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Textarea, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 //new component #2
 
 function Notes() {
@@ -15,7 +15,7 @@ function Notes() {
         <div>
             {/* <input type= "text" value={input} onChange={handleUserInput} /> */}
             {/* text area box */}
-            <Textarea style={styles.text} value={input} onChange={handleUserInput} 
+            <textarea id="body" value={input} onChange={handleUserInput} 
             placeholder="Write your notes in here. Expand this notes section if neccessary."/>
             {/* reset button */}
             <br></br>
@@ -27,7 +27,7 @@ function Notes() {
 const styles = StyleSheet.create ({
     body: {
         backgroundColor: '#0000'
-    }
+    },
 })
 
 export default Notes; StyleSheet;
