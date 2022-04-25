@@ -7,7 +7,7 @@ const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
-        <Text style= {styles.text}>Keep track of how many tasks you've compeleted </Text>
+        <Text style= {styles.text2}>Keep track of how many tasks you've compeleted </Text>
         {/* <p>Keep track of how many tasks you've compeleted</p> */}
         <Text style= {styles.text}># of Tasks Completed: {count} </Text>
         {/* <p> # of Tasks Completed: {count}</p> */}
@@ -41,7 +41,12 @@ const Counter = () => {
 const styles = StyleSheet.create ({
     text: {
         fontSize: 25,
-        padding: 20,
+        padding: 10,
+        alignSelf: 'center',
+    }, 
+    text2: {
+        fontSize: 20,
+        padding: 10,
         alignSelf: 'center',
     }, 
 });
