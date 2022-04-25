@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, TextInput } from 'react-native';
+import { StyleSheet, TextInput, Button } from 'react-native';
 //new component #2
 
 function Notes() {
@@ -21,7 +21,8 @@ function Notes() {
             placeholder="Write your notes in here. Area will automatically expand."/>
             {/* reset button */}
             <br></br>
-            <button onClick={resetInputField}>Reset Notes</button>
+            {/* <button onClick={resetInputField}>Reset Notes</button> */}
+            <Button title="Reset Notes" onPress={resetInputField} > </Button>
         </div>
     );
 }
