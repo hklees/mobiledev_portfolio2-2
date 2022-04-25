@@ -28,7 +28,7 @@ function Notes() {
             <Button buttonStyle={{
                 backgroundColor: 'red',
                 height: 40,
-                width: 200,
+                width: 150,
                 alignItems: 'center',
                 justifyContent: 'center',
             }}
